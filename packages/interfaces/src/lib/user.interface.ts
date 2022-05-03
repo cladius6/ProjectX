@@ -10,7 +10,7 @@ export interface IUser {
   updatedAt: Date;
 }
 
-export interface CreateUserInterfaceRequest {
+export interface ICreateUserInterfaceRequest {
   username: string;
   password: string;
   email: string;
@@ -18,7 +18,7 @@ export interface CreateUserInterfaceRequest {
   lastName: string;
 }
 
-export interface CreateUserInterfaceResponse {
+export interface ICreateUserInterfaceResponse {
   id: string;
   username: string;
   email: string;
