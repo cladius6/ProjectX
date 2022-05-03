@@ -1,1 +1,14 @@
-export class User {}
+import { Entity } from "typeorm";
+
+@Entity('users')
+export class User {
+  id: number;
+  username: string;
+  password: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  role: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
